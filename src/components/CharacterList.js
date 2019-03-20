@@ -3,8 +3,12 @@ import Card from './CharacterCard';
 
 const StudentContainer = (props) => {
 
-  return (
+  return(
     <div id="character-list">
+      <h2>Character List</h2>
+      {props.students.map(student=>
+        <Card key={student._id} studentInfo={student} handleAdd={props.handleAdd}/>
+      )}
     </div>
   )
 }

@@ -55,7 +55,7 @@ button {
   width: 30vw;
 }
 
-#character-card {
+.character-card {
   background-color: #560319;
   color: gold;
   font-size: 2vw;
